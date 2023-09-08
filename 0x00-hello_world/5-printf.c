@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: Prints a message with proper grammar
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
