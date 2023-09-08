@@ -1,26 +1,26 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char letter;
+	char c;
 
-    for (letter = 'a'; letter <= 'z'; letter++)
-    {
-        putchar(letter);
-    }
-
-    for (letter = 'A'; letter <= 'Z'; letter++)
-    {
-        putchar(letter);
-    }
-
-    putchar('\n'); // Print a newline character to end the line
-
-    return (0);
+	char d;
+	
+	c = 'a';
+	d = 'A';
+	while
+		(c <= 'z') {
+			putchar(c);
+			c++;
+		}
+	while
+		(d <= 'z') {
+			putchar(d);
+			c++
+		}
+	putchar('\n');
+	return (0);
 }
-
