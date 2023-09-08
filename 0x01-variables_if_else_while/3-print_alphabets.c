@@ -7,19 +7,20 @@
  */
 int main(void)
 {
-    char lowercase = 'a';
-    char uppercase = 'A';
+    char letter = 'a';
 
-    while (lowercase <= 'z')
+    while (letter <= 'z')
     {
-        putchar(lowercase);
-        lowercase++;
+        putchar(letter);
+        letter++;
     }
 
-    while (uppercase <= 'Z')
+    letter = 'A';
+
+    while (letter <= 'Z')
     {
-        putchar(uppercase);
-        uppercase++;
+        putchar(letter);
+        letter++;
     }
 
     putchar('\n'); // Print a newline character to end the line
