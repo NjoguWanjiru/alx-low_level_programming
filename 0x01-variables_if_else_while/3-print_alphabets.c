@@ -7,20 +7,15 @@
  */
 int main(void)
 {
-    char letter = 'a';
+    char letter;
 
-    while (letter <= 'z')
+    for (letter = 'a'; letter <= 'z' || letter <= 'Z'; letter++)
     {
+        if (letter > 'Z' && letter <= 'z')
+        {
+            letter = 'A';
+        }
         putchar(letter);
-        letter++;
-    }
-
-    letter = 'A';
-
-    while (letter <= 'Z')
-    {
-        putchar(letter);
-        letter++;
     }
 
     putchar('\n'); // Print a newline character to end the line
