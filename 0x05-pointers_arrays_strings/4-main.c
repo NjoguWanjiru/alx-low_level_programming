@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h> // Include the stdio.h header
+#include <stdio.h> 
 
 /**
  * main - check the code
