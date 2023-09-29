@@ -10,4 +10,7 @@ void _puts_recursion(char *s);
 /* Function prototype for _print_rev_recursion */
 void _print_rev_recursion(char *s);
 
+/* Function prototype for _strlen_recursion */
+int _strlen_recursion(char *s);
+
 #endif /* MAIN_H */
