@@ -1,9 +1,9 @@
 #include <stdlib.h>
 /**
  * strtow - Splits a string into words.
- * @str: The string to split.
+ * @str: The input string to split.
  *
- * Return: A pointer to an array of strings (words), or NULL on failure.
+ * Return: A pointer to an array of strings (words).
  */
 char **strtow(char *str)
 {
@@ -14,7 +14,7 @@ char **strtow(char *str)
     {
         if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
             word_count++;
-   }
+    }
     char **words = malloc((word_count + 1) * sizeof(char *));
     if (words == NULL)
         return (NULL);
@@ -24,7 +24,6 @@ char **strtow(char *str)
     {
         if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
             start = i;
-
         if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
         {
             int word_length = i - start + 1;
