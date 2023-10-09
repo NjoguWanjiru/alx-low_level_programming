@@ -25,4 +25,7 @@ void print_dog(struct dog *d);
 /* Function prototype for new_dog */
 dog_t *new_dog(char *name, float age, char *owner);
 
+/* Function prototype for free_dog */
+void free_dog(dog_t *d);
+
 #endif /* DOG_H */
