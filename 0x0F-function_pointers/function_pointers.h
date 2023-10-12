@@ -16,4 +16,7 @@ void print_name_uppercase(char *name);
 /* Prototype for the array_iterator function */
 void array_iterator(int *array, size_t size, void (*action)(int));
 
+/* Prototype for the int_index function */
+int int_index(int *array, int size, int (*cmp)(int));
+
 #endif /* FUNCTION_POINTERS_H */
