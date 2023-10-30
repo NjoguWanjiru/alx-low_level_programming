@@ -1,0 +1,24 @@
+section .data
+    hello db 'Hello, Holberton',10  ; The string to be printed
+    hello_len equ $ - hello         ; Calculate the length of the string
+
+section .text
+global _start
+
+_start:
+    ; Set up stack frame
+    push rbp
+    mov rbp, rsp
+
+    ; Write the message to stdout
+    mov rdi, 1                  ; stdout file descriptor
+    mov rsi, hello              ; pointer to the string
+    mov rdx, hello_len          ; length of the string
+    mov rax, 1                  ; sys_write
+    syscall
+
+    ; Restore stack frame and exit
+    pop rbp
+    mov rax, 60                 ; sys_exit
+    xor rdi, rdi                ; Return status: 0
+    syscall
